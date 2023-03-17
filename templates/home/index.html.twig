@@ -9,37 +9,20 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>{{ home }}</h1>
   <div class="row">
-  <div class="col-sm-4">
+   {% for produit in produits %} 
+  <div class="col-sm-4 mb-2">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Les Card Bootstrap</h5>
-        <p class="card-text">Un exemple de card qui prend du texte.</p>
+        <h5 class="card-title">{{produit.productName}}</h5>
+        <p class="card-text">{{produit.productPrice}} €</p>
+        <p class="card-text">{{produit.productProvenance}}</p>
         <a href="#" class="btn btn-danger">Voir le produit</a>
       </div>
     </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Les Card Bootstrap</h5>
-        <p class="card-text">Un exemple de card qui prend du texte.</p>
-        <a href="#" class="btn btn-danger">Voir le produit</a>
-      </div>
-    </div>
-  </div>
-
- <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Les Card Bootstrap</h5>
-        <p class="card-text">Un exemple de card qui prend du texte.</p>
-        <a href="#" class="btn btn-danger">Voir le produit</a>
-      </div>
-    </div>
-  </div>
-
+  </div> 
+  {% endfor %}
 </div>
+
 </div>
 {% endblock %}
