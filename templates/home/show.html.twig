@@ -1,0 +1,119 @@
+
+{# <a href="{{path('app_home')}}">{{'back to homme'|upper}}</a> #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  {{ 'détail produit'|upper}}
+{% endblock %}
+
+{% block body %}
+<div class="example-wrapper">
+   <div class="row">
+   <!--Start of small-products col--> 
+    <div class="col-2 ">
+    <div class="small-product-img">
+        <img
+          src="https://i.postimg.cc/Nfh1sc74/lenovo-front.jpg"
+          alt="db image"
+          onmouseover="myFunction(this)"
+        />
+        <img
+          src="https://i.postimg.cc/GpSyZwmv/lenovo-back.jpg"
+          alt="db image"
+          onmouseover="myFunction(this)"
+        />
+        <img
+          src="https://i.postimg.cc/Hnts1X9F/lenovo-front-up.jpg"
+          alt="db image"
+          onmouseover="myFunction(this)"
+        />
+        <img
+          src="https://i.postimg.cc/tgVqCLz3/lenovo-full-image.jpg"
+          alt="db image"
+          onmouseover="myFunction(this)"
+        />
+        <img
+          src="https://i.postimg.cc/d3QcdXGS/lenovo-half.jpg"
+          alt="db image"
+          onmouseover="myFunction(this)"
+        />
+      </div>
+      </div> <!--Enf of small-products col-->
+     <!--Start of Full-product col-->
+    <div class="col-3 ">
+      <div class="full-image">
+          <img src="https://i.postimg.cc/Nfh1sc74/lenovo-front.jpg" id="mainImg" alt="symfo image" />
+      </div>
+   </div>
+   <!--End of Full-product col--> 
+   <div class="col-4 ">
+      <div class="description">
+        <h4 class="">
+             <strong>Lenovo Ipad 3</strong>
+         </h4>
+         <h4 class="text-red">
+             <strong class="text-danger">657.78 €</strong>
+         </h4>
+         <p><strong>Marque:</strong> Lenovo</p>
+         <p><strong>Capacité mémoire:</strong> 256go</p>
+         <p><strong>Taille Ecran:</strong> 13''</p>
+         <p><strong>OS:</strong> Android</p>
+         <p><strong>RAM:</strong> 8go</p>
+         <p><strong>Vitesse CPU:</strong> 2.6 GHz</p>
+         <p><strong>Connexion:</strong> Bluetooth, Wi-Fi 6, 11ax 2x2</p>
+         <p><strong>Poids:</strong> 1kg</p>
+
+      </div>
+   </div>
+
+   <div class="col-3">
+      <div class="panier">
+         <p>
+         <a class="btn btn-warning btn-sm " href="#" role="button">Ajouter au panier </a>
+         </p>
+         <p class="">
+             <a class="btn btn-success btn-sm " href="#" role="button">Acheter ce produit </a>
+         </p>
+      </div>
+   </div>
+
+<h2>Produits fréquemment achetés ensemble</h2>
+<div class="d-flex flex-row">
+  <div class="similar-product col-3 p-2 mx-2">
+  <img src="https://i.postimg.cc/PJFTCtF4/RhohsZ.jpg" alt="Ecouteurs">
+  </div>
+  <div class="similar-product col-3 p-2 mx-2">
+  <img src="https://i.postimg.cc/LshCTWjQ/LinkPlus.jpg" alt="Pc LinkPlus">
+  </div>
+  <div class="similar-product col-3 p-2 mx-2">
+  <img src="https://i.postimg.cc/nckwYRHy/msi-game.jpg" alt="Pc Msi">
+  </div>
+  <div class="similar-product col-3 p-2 mx-2">
+  <img src="https://i.postimg.cc/0y7jBw41/Ordinateur-2.jpg" alt="Pc Asus">
+  </div>
+</div>
+
+<div class="d-flex flex-row text-danger fw-bolder">
+  <div class="col-3 p-2 mx-2">
+  <p>45.67 €</p>
+  </div>
+  <div class="col-3 p-2 mx-2">
+  <p>679.97 €</p>
+  </div>
+  <div class="col-3 p-2 mx-2">
+  <p>1237.89 €</p>
+  </div>
+  <div class="col-3 p-2 mx-2">
+  <p>776.45 €</p>
+  </div>
+</div>
+    
+    <script>
+      function myFunction(smallimg) {
+        var fullImage = document.getElementById("mainImg");
+        fullImage.src = smallimg.src;
+      }
+    </script>  
+</div>
+{% endblock %}

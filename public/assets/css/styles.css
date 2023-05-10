@@ -1,0 +1,86 @@
+/*****************globals*************/
+body {
+  font-family: "open sans";
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+.example-wrapper {
+  margin: 10% 1%;
+}
+#monform {
+  margin-top: 100px;
+  width: 50%;
+}
+.votre-compte {
+  text-decoration: none;
+}
+form {
+  border: 1px solid gainsboro;
+  padding: 5px;
+}
+.login-text {
+  text-align: center;
+}
+.search {
+  border-style: none;
+}
+
+/* Start of styles  de product_detail */
+.small-product-img img {
+  height: 82px;
+  width: 100px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: block;
+  border: 1px solid gainsboro;
+}
+/*-----------------Align small images--------------------*/
+.small-product-img {
+  float: left;
+}
+/*-----------------center small images--------------------*/
+.full-image img {
+  height: 300px;
+}
+/*-----------------Align full image--------------------*/
+.full-image {
+  float: right;
+  padding: 20px;
+}
+/*-----------------Add hover effect on images--------------------*/
+.small-product-img img:hover {
+  opacity: 0.8;
+}
+
+/* End of styles  de product_detail */
+
+/* Card css */
+.similar-product {
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 250px;
+  transition: all linear 200ms;
+}
+.similar-product:hover {
+  transform: scale(1.1);
+  transition: all linear 200ms;
+  z-index: 1;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.similar-product img {
+  width: 200px;
+  height: 200px;
+}
+.card img {
+  width: 200px;
+}
+.price {
+  float: left;
+}

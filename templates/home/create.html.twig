@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{# this tag only applies to the forms defined in this template #}
+{% form_theme myForm'bootstrap_5_layout.html.twig' %}
+
+{% block title %} {{'product insert'|upper}} {% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+<div class="mx-auto col-10 col-md-8 col-lg-6">
+<h1>Enregistrer Un Produit En Base</h1><br>
+  
+  {{ form_start(myForm) }}
+  
+  {{ form_widget(myForm) }} {# pour inclure les champs du Form #}
+  
+  <input class="btn btn-danger" type="submit" value="Enregistrer un produit" >
+   
+  {{ form_end(myForm) }}
+  
+   </div>
+</div>
+
+{% endblock %}

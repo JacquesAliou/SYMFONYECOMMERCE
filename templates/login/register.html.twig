@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'créer un compte'|upper}}{% endblock %}
+
+{% block body %}
+<div class="example-wrapper">
+<form class="register mx-auto col-10 col-md-8 col-lg-6">		
+ 
+                <h4 class="text-center mx-1 mx-md-4">Sign up</h4>
+                  <div class="d-flex flex-row align-items-center mb-2">
+                    <div class="form-outline flex-fill mx-2">
+                    <label class="form-label" for="form3Example1c">Votre Nom</label>
+                      <input type="text" id="form3Example1c" class="form-control" />   
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-2">
+                    <div class="form-outline flex-fill mx-2">
+                    <label class="form-label" for="form3Example3c">Votre Email</label>
+                      <input type="email" id="form3Example3c" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-2">
+                    <div class="form-outline flex-fill mx-2">
+                        <label class="form-label" for="form3Example4c">Mot de Pass</label>
+                        <input type="password" id="form3Example4c" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-2">
+                    <div class="form-outline flex-fill mx-2">
+                        <label class="form-label" for="form3Example4cd">Répéter votre mot de pass</label>
+                        <input type="password" id="form3Example4cd" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="form-check d-flex justify-content-center mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example3c" />
+                        <label class="form-check-label" for="form2Example3">
+                      J'ai Lu et accepté <a href="#!">Les Conditions</a>
+                    </label>
+                  </div>
+
+                  <div class="d-flex mb-2">
+                        <button type="button" class="btn btn-primary btn-lg mx-2">Enregister</button>
+                  </div>
+</form>
+</div>
+{% endblock %}
